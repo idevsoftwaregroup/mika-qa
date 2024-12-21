@@ -1,0 +1,43 @@
+@font-face {
+  font-family: mika-bold;
+  src: url(./MIKA-Bold.ttf);
+}
+@font-face {
+  font-family: mika-light;
+  src: url(./MIKA-Light.ttf);
+}
+@font-face {
+  font-family: mika-regular;
+  src: url(./MIKA-Regular.ttf);
+}
+@font-face {
+  font-family: mika-semiBold;
+  src: url(./MIKA-SemiBold.ttf);
+}
+
+/* Infrastructure Font */
+body,
+div {
+  font-family: mika-semiBold;
+}
+
+table,
+thead,
+tbody,
+p,
+span,
+li,
+ol,
+ul {
+  font-family: mika-semiBold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+thead {
+  font-family: mika-bold;
+}

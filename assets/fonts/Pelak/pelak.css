@@ -1,0 +1,20 @@
+@font-face {
+  font-family: pelak-medium;
+  src: url(./PelakFA-Medium.ttf);
+}
+@font-face {
+  font-family: pelak-regular;
+  src: url(./PelakFA-Regular.ttf);
+}
+@font-face {
+  font-family: pelak-bold;
+  src: url(./PelakFA-Bold.ttf);
+}
+@font-face {
+  font-family: pelak-extra-bold;
+  src: url(./PelakFA-ExtraBold.ttf);
+}
+@font-face {
+  font-family: pelak-thin;
+  src: url(./PelakFA-Thin.ttf);
+}

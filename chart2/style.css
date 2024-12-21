@@ -1,0 +1,16 @@
+/* Custom template of the current organization chart */
+
+@font-face {
+    font-family: 'Mika'; /* The name you want to give to the font */
+    src: url('/fonts/MIKA-Light.ttf'); /* The path to your font file */
+  }
+  
+  body {
+    font-family: 'Mika', Arial, sans-serif !important; /* Use the 'Mika' font if available, otherwise fallback to Arial or sans-serif */
+  }
+  div {
+    font-family: Mika !important;
+  }
+  text {
+    font-family: Mika !important;
+  }

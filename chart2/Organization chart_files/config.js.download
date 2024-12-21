@@ -1,0 +1,20 @@
+﻿var CONFIG = {
+    enableUserSettings: true,
+    showUserManual: true,
+    title: { color: "#05668d", text: "" },
+    information: '',
+    photoUrl: { prefix: "", suffix: "" },
+    startView: { photos: true, names: true, columnview: false, staffColumnview: false, showNrDepartments: true, showNrPeople: true },
+    enableScreenCapture: true,
+    levelColors: ["#fff", "#fff", "#fff", "#fff", "#fff","#fff", "#fff", "#fff", "#fff", "#fff"],
+    editCommand: "_edit",
+    dataFields: [{ name: "Location", type: "text" }],
+    personProperties: [
+        { name: "Phone", type: "text", order: 0 },
+        { name: "Email", type: "text", order: 1 },
+        { name: "Homepage", type: "text", order: 2 },
+        { name: "Country", type: "text", order: 3 },
+        { name: "City", type: "text", order: 4 },
+        { name: "Street", type: "text", order: 5 },
+    ],
+};

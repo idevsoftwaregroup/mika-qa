@@ -1,0 +1,20 @@
+﻿var UINAMES = {
+  person: {
+    name: 'Name',
+    function: 'Function',
+    id: 'Employee ID',
+    departments: 'Departments'
+  },
+  sidebar: {
+    detailTabName: 'جزییات',
+    peopleTabName: 'افراد',
+    departmentName: 'نام و نام خانوادگی',
+    departmentManager: 'سمت',
+    departmentDescription: 'توضیحات',
+    departmentType: 'پست',
+    departmentHierarchy: 'درختواره',
+    departmentTypeStaff:'', //'Staff department',
+    departmentTypeNormal:'', //'Normal department',
+    managerOfDepartment:'', //'Manager of department'
+  }
+}

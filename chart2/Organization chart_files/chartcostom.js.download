@@ -1,0 +1,234 @@
+﻿$(document).ready(function(){
+  
+	
+setInterval(function () {
+
+$(".department").each(function(){
+$(this).find(".name").attr("onclick","showitem('"+$(this).find(".manager_photo").attr("id")+"')");
+$(this).find(".name_manager").attr("onclick","showitem('"+$(this).find(".manager_photo").attr("id")+"')");
+if ($(this).find(".name_manager").text() == "مسئول دفتر")
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+/*az inja*/
+if ($(this).find(".name_manager").text() == "مشاور حقوقی")
+{
+$(this).find(".level_indicator").attr("style","background-color:#A9D08E;")
+}
+if ($(this).find(".name").text() == "balnk")
+{
+$(this).find(".name").text("");
+//$(this).find(".manager_photo").html("");
+$(this).find(".material-icons").click();
+//$(this).attr("style","background-image: url('/images/charttest/lineitem.png');background-repeat: no-repeat;background-position: right 109px center;background-size: 2px;");
+$(this).find(".manager_photo").attr("style","width:207px;border:0px;background-color: transparent !important;background-image: url('/images/charttest/lineitem.png');background-repeat: no-repeat;background-position: center center;background-size: 2px;cursor: default;");
+$(this).find(".profile").hide();
+$(this).find(".material-icons").hide();
+$(this).find(".level_indicator").hide();
+//$(this).find(".manager_photo").attr("id","1234567");
+$(this).find(".down").hide();
+$(this).find(".material-icons").hide();
+$(this).find(".name").hide();
+$(this).find(".name_manager").hide();
+
+}
+
+/*ta inja*/
+if ($(this).find(".name_manager").text().indexOf("معاونت") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#8EA9DB;")
+}
+if ($(this).find(".name_manager").text().indexOf("دستیار") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("سرپرست") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("کارشناس") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("مدیر") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#A9D08E;")
+}
+if ($(this).find(".name_manager").text().indexOf("رئیس کارگاه") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#A9D08E;")
+}
+if ($(this).find(".name_manager").text().indexOf("تحصیلدار") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("راننده") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("خدمات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FF99CC;")
+}
+if ($(this).find(".name_manager").text().indexOf("مسئول خدمات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("معاونت فروش و خدمات پس از فروش") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#8EA9DB;")
+}
+if ($(this).find(".name_manager").text().indexOf("معاون هماهنگی") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#8EA9DB;")
+}
+if ($(this).find(".name_manager").text().indexOf("رئیس هیئت مدیره") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#1e81b0;")
+}
+if ($(this).find(".name_manager").text().indexOf("مدیر عامل") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#1e81b0;")
+}
+if ($(this).find(".name_manager").text().indexOf("عکاس") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("کپی رایتر") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("گرافیست") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("حراست") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("مسئول استخر") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("انباردار") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("مسئول تأسیسات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("مسئول حراست") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("باغبان") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FF99CC;")
+}
+if ($(this).find(".name_manager").text().indexOf("سرپرست خدمات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("کارشناس خدمات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("تکنسین خدمات فنی") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("ریگر") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("اپراتور") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("تکنسین") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("رئیس حسابداری") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("رئیس حسابرسی") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("سرپرست خدمات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("رسپشن") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("سرپرست حراست") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("سرپرست رسپشن") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("تشریفات") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#CCCCFF;")
+}
+if ($(this).find(".name_manager").text().indexOf("تکنسین پشتیبانی ایونت") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("کارشناس اطلاعات مدیریت پروژه") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#F4B084;")
+}
+if ($(this).find(".name_manager").text().indexOf("مأمور خرید") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FFE699;")
+}
+if ($(this).find(".name_manager").text().indexOf("سرایدار") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#FF99CC;")
+}
+
+if ($(this).find(".name_manager").text().indexOf("مدیر امور مجوزها") > -1)
+{
+$(this).find(".level_indicator").attr("style","background-color:#A9D08E;")
+}
+/*if ($(this).find(".name").text() == "سيف اله علاء الدینی")
+{
+$(this).find(".manager_photo").attr("style","background-image:url('/images/charttest/photos/iconsstar.png');background-repeat: no-repeat;background-position: left top;")
+}*/
+
+});
+}, 2000);
+
+setInterval(function () {
+$(".department").each(function(){
+if ($(this).find(".name").text() == "balnk")
+{
+$(this).find(".name").text("");
+//$(this).find(".manager_photo").html("");
+$(this).find(".material-icons").click();
+//$(this).attr("style","background-image: url('/images/charttest/lineitem.png');background-repeat: no-repeat;background-position: right 109px center;background-size: 2px;");
+$(this).find(".manager_photo").attr("style","width:207px;border:0px;background-color: transparent !important;background-image: url('/images/charttest/lineitem.png');background-repeat: no-repeat;background-position: center center;background-size: 2px;cursor: default;");
+$(this).find(".profile").hide();
+$(this).find(".material-icons").hide();
+$(this).find(".level_indicator").hide();
+//$(this).find(".manager_photo").attr("id","1234567");
+$(this).find(".down").hide();
+$(this).find(".material-icons").hide();
+$(this).find(".name").hide();
+$(this).find(".name_manager").hide();
+
+}
+
+});
+
+}, 100);
+
+});

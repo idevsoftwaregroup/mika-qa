@@ -1,0 +1,269 @@
+img[alt="Logo"] {
+  width: 85px;
+  height: 20px !important;
+}
+.aside-secondary,
+.form,
+.table {
+  direction: rtl !important;
+}
+#kt_header_container {
+  direction: rtl !important;
+}
+
+.symbol-label {
+  background-color: inherit !important;
+}
+* {
+  font-family: mika-bold !important;
+}
+/* add for side bar item to stay center */
+.nav {
+  padding: 0px !important;
+}
+/* for select div on permit form background color */
+/* .form-select,
+.form-control {
+  background-color: rgb(255, 255, 255) !important;
+} */
+/* to fix all table style in site (contractor admin panel && check list table */
+table tr td {
+  background-color: white !important;
+  padding: 13px !important;
+}
+
+tr {
+  border-bottom: 0.1px solid rgb(201, 201, 201) !important;
+}
+#preview {
+  width: 100%;
+  height: 100%;
+}
+
+/* Items of the history progress bar tracking persons of the project PErsonnel ( personnels ) */
+.card {
+  z-index: 0;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.top {
+  padding-top: 40px;
+  padding-left: 13% !important;
+  padding-right: 13% !important;
+}
+
+/*Icon progressbar*/
+#progressbar {
+  /* margin-bottom: 30px; */
+  overflow: hidden;
+  color: #455a64;
+  padding-left: 25px;
+  margin-top: 30px;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 13px;
+  width: 40%;
+  float: right;
+  position: relative;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+#progressbar .step0:before {
+  font-family: FontAwesome;
+  content: "*";
+  color: #c70707;
+  font-size: 50px;
+  font-weight: normal;
+  border: 3px solid black;
+  background-color: #c70707;
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: inline-block;
+  font-size: 20px;
+  background: #d9dae0;
+  border-radius: 50%;
+  margin: 5px 15px;
+  padding: 0px;
+}
+
+/* ProgressBar connectors
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 12px;
+  background: #d9dae0;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  z-index: -1;
+} */
+
+/* #progressbar li:last-child:after {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  left: -50%;
+} */
+
+/* #progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after {
+  left: -50%;
+} */
+
+/* #progressbar li:first-child:after {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  left: 50%;
+}
+
+#progressbar li:last-child:after {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #fff;
+  border: 3px solid black;
+}
+
+#progressbar li.active:before {
+  font-family: FontAwesome;
+  content: "✓";
+  color: #129045;
+  font-size: 50px;
+  font-weight: normal;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.icon-content {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .icon-content {
+    width: 50%;
+  }
+}
+
+.titleOfProcess {
+  text-align: right;
+  padding: 15px 30px;
+}
+.aside-fixed.aside-secondary-enabled[data-kt-sticky-header="on"] .header {
+  display: none !important;
+}
+
+.bg-267fe7 {
+  background-color: rgb(0, 0, 131);
+}
+.bg-129045 {
+  background-color: rgb(0, 105, 0);
+}
+.bg-c70707 {
+  background-color: rgb(109, 0, 0);
+}
+.bg-c122334 {
+  background-color: rgb(126, 13, 136);
+}
+
+.bg-warning {
+  background-color: #cf7407 !important;
+}
+.statusPositionHistory {
+  font-size: 12px !important;
+  position: absolute;
+  left: 60px;
+  text-align: center;
+  width: 400px;
+}
+
+.statusSize {
+  width: 85%;
+  display: inline-block;
+}
+
+.clickable-row:hover {
+  cursor: pointer;
+}
+
+/* Edits  */
+
+/* .flex-column-fluid {
+  flex:none !important;
+} */
+/* 
+.aside {
+  overflow: hidden !important;
+} */
+.no-hover {
+  pointer-events: none; /* Disables all mouse events */
+  overflow: hidden; /* Prevents any overflow from showing */
+}
+
+.with-hover {
+  pointer-events: auto !important;
+}
+
+@media screen and (max-width: 700px) {
+  .w-sm-100 {
+    min-width: 100% !important;
+  }
+  .mobile_view {
+    margin-right: 23px;
+    position: relative;
+    top: -45px;
+    left: 19px;
+    min-width: 37px;
+    font-size: 5px;
+  }
+  .thisview {
+    position: relative;
+    left: 55px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mobile_view {
+    display: none;
+  }
+  .thisview {
+    position: unset;
+    left: unset;
+  }
+}
+
+.btn:hover {
+  color: white;
+}
+
+.button:hover {
+  color: white !important;
+}
+
+.button-dark:hover {
+  color: black;
+}

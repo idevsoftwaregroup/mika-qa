@@ -1,0 +1,18 @@
+#chart-container {
+  font-family: Arial;
+  height: 420px;
+  border: 2px dashed #aaa;
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
+}
+
+#github-link {
+  position: fixed;
+  right: 10px;
+  font-size: 3em;
+}
+
+.orgchart .dotted-connection .edge {
+  stroke-dasharray: 5, 5; /* Dotted line */
+}

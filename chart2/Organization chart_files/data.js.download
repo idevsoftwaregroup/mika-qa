@@ -1,0 +1,125 @@
+var INPUT_DATA = {
+    api_version: "2.0",
+    chart: {
+        id: "1",
+        name: "Software BV",
+        description: "",
+        parent_id: "",
+        staff_department: "N",
+        manager_id: "B01",
+        dataFields: [{ name: "Location", value: "", type: "text" }],
+        children: [
+            { id: "2", name: "Office", description: "", parent_id: "1", staff_department: "Y", manager_id: "B01", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: true },
+            {
+                id: "3",
+                name: "Communication",
+                description: "",
+                parent_id: "1",
+                staff_department: "Y",
+                manager_id: "B02",
+                dataFields: [{ name: "Location", value: "", type: "text" }],
+                children: [
+                    { id: "2b5f3900-b816-b42a-f272-b9ae0ca0ab83", name: "varabd", description: "yuiyiyiu", parent_id: "23", staff_department: "N", manager_id: "B010",dataFields: [{ name: "Location", value: "", type: "text" }], children: [{ id: "22", name: "Office", description: "rtyrytrytr", parent_id: "3", staff_department: "Y", manager_id: "B01", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: true },], showChildren: false },
+{ id: "2b5f3900-b816-b42a-f272-b9ae0ca0ab83", name: "varabd", description: "yuiyiyiu", parent_id: "23", staff_department: "N", manager_id: "B010",dataFields: [{ name: "Location", value: "", type: "text" }], children: [{ id: "22", name: "Office", description: "rtyrytrytr", parent_id: "3", staff_department: "Y", manager_id: "B01", dataFields: [{ name: "Location", value: "", type: "text" }], children: [{ id: "2b5f3900-b816-b42a-f272-b9ae0ca0ab83", name: "varabd", description: "yuiyiyiu", parent_id: "23", staff_department: "N", manager_id: "B010",dataFields: [{ name: "Location", value: "", type: "text" }], children: [{ id: "22", name: "Office", description: "rtyrytrytr", parent_id: "3", staff_department: "Y", manager_id: "B01", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: true },], showChildren: false },], showChildren: true },], showChildren: false },
+                ],
+                showChildren: false,
+            },
+            { id: "4", name: "Strategy & Sustainability", description: "", parent_id: "1", staff_department: "Y", manager_id: "B01", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: false },
+            {
+                id: "5",
+                name: "Desktop Development",
+                description: "",
+                parent_id: "1",
+                staff_department: "N",
+                manager_id: "B01",
+                dataFields: [{ name: "Location", value: "", type: "text" }],
+                children: [
+                    {
+                        id: "5_1",
+                        name: "Business customers",
+                        description: "",
+                        parent_id: "5",
+                        staff_department: "N",
+                        manager_id: "B02",
+                        dataFields: [{ name: "Location", value: "", type: "text" }],
+                        children: [
+                            {
+                                id: "5_1_0",
+                                name: "Business Office",
+                                description: "",
+                                parent_id: "5_1",
+                                staff_department: "Y",
+                                manager_id: "B05",
+                                dataFields: [{ name: "Location", value: "", type: "text" }],
+                                children: [],
+                                showChildren: false,
+                            },
+                            {
+                                id: "5_1_1",
+                                name: "Front end team",
+                                description: "",
+                                parent_id: "5_1",
+                                staff_department: "N",
+                                manager_id: "B02",
+                                dataFields: [{ name: "Location", value: "", type: "text" }],
+                                children: [],
+                                showChildren: false,
+                            },
+                            { id: "5_1_2", name: "Back end team", description: "", parent_id: "5_1", staff_department: "N", manager_id: "B05", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: false },
+                            { id: "5_1_3", name: "Api team 1", description: "", parent_id: "5_1", staff_department: "N", manager_id: "B02", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: false },
+                        ],
+                        showChildren: false,
+                    },
+                    { id: "5_2", name: "Private Customer", description: "", parent_id: "5", staff_department: "N", manager_id: "B02", dataFields: [{ name: "Location", value: "", type: "text" }], children: [], showChildren: false },
+                ],
+                showChildren: false,
+            },
+            
+            
+            
+        ],
+        showChildren: true,
+    },
+    people: [
+        {
+            id: "B01",
+            name: "Big Boss",
+            photo: "B01",
+            functionName: "chief executive officer",
+            fields: { Email: "bigbos@someaddress.nl", Phone: "0345-394930203", Homepage: "nu.nl", Country: "Netherlands", City: "Amsterdam", Street: "Kalverstraat 1" },
+        },
+{
+            id: "B010",
+            name: "Big Boss",
+            photo: "B01",
+            functionName: "chief executive officer",
+            fields: { Email: "bigbos@someaddress.nl", Phone: "0345-394930203", Homepage: "nu.nl", Country: "Netherlands", City: "Amsterdam", Street: "Kalverstraat 1" },
+        },
+        { id: "B03", name: "Mo Ney", photo: "B03", functionName: "CFO", fields: { Email: "", Phone: "0345-394930204", Homepage: "linkedin.com", Country: "Netherlands", City: "Amsterdam", Street: "Vijzelstraat 143a" } },
+        {
+            id: "B02",
+            name: "S. Talker",
+            photo: "B02",
+            functionName: "HR",
+            fields: { Email: "", Phone: "0345-394930205", Homepage: "https://www.linkedin.com/company/philips/", Country: "Netherlands", City: "Amsterdam", Street: "Molenstraat 6" },
+        },
+        { id: "df", name: "Big Boss1", photo: "", functionName: "", fields: { Email: "", Phone: "0345-394930206", Homepage: "https://www.linkedin.com/company/philips/", Country: "Netherlands", City: "Amsterdam", Street: "Kerkwerg 15" } },
+        {
+            id: "B05",
+            name: "Mr x",
+            photo: "B05",
+            functionName: "",
+            fields: { Email: "MRX@somecomplany.mail", Phone: "0345-394930207", Homepage: "https://www.linkedin.com/company/philips/", Country: "Netherlands", City: "Utrecht", Street: "Dorpstraat 9" },
+        },
+        {
+            id: "B04",
+            name: "Mr y",
+            photo: "B04",
+            functionName: "CIO",
+            fields: { Email: "", Phone: "0345-394930208", Homepage: "https://www.linkedin.com/company/philips/", Country: "Netherlands", City: "Utrecht", Street: "Stationslaan 88" },
+        },
+       
+    ],
+    
+};
+var UPDATED_ON = "13-09-2020";
